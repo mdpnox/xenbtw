@@ -9,7 +9,7 @@ type BoxData = {
 };
 
 const BOXES: BoxData[] = [
-  { title: 'Me?', content: 'Just a 20yo gamer who loves Counter Strike and fps games in general. Ah yes i also am a fullstack developer and yes i am miserable and suffering.' },
+  { title: 'Me?', content: 'Just a 20yo gamer who loves Counter Strike and FPS games in general. Ah yes i am also a fullstack developer and yes i am miserable and suffering.' },
   { title: 'Why did i make this website?', content: 'Its unemployment. Besides that, i have always wanted to have a cool-ass steam profile but it costs quite an amount of steampoints so i thought to myself that why dont i just make a site to showcase my shit. And as i finished, i dont even want this anymore so the site became a place to save my config. lol' },
   {
     title: 'Background?',
