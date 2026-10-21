@@ -11,7 +11,6 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl flex-row items-center gap-6 px-4">
-        {/* Logo + tên */}
         <Link to="/" className="flex shrink-0 flex-row items-center gap-3">
           <img
             src="/avt.jpg"
@@ -21,7 +20,6 @@ export default function Navbar() {
           <span className="text-lg font-bold text-white">xen1337_btw</span>
         </Link>
 
-        {/* Các nút: nằm ngang, ngay sau logo */}
         <div className="ml-auto flex flex-row items-center gap-6">
           <NavLink to="/" end className={linkClass}>
             <span>Home</span>

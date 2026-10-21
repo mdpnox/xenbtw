@@ -12,7 +12,6 @@ export default function MusicPlayer() {
 
   return (
     <div className="rounded-xl bg-red-950/40 p-4 text-red-400">
-      {/* Tên bài + thời gian hiện tại */}
       <div className="flex items-center gap-3">
         <Music size={28} />
         <div>
@@ -21,7 +20,6 @@ export default function MusicPlayer() {
         </div>
       </div>
 
-      {/* Thanh tiến trình */}
       <div className="mt-3 flex items-center gap-3">
         <input
           type="range"
@@ -36,7 +34,6 @@ export default function MusicPlayer() {
         <span className="text-xs">{fmt(duration)}</span>
       </div>
 
-      {/* Hàng nút */}
       <div className="mt-3 flex items-center gap-4">
         <button onClick={prev} aria-label="Bài trước">
           <SkipBack size={22} fill="currentColor" />

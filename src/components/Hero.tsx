@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import MusicPlayer from './MusicPlayer';
 import InfoBox from './InfoBox';
 
-const MAX_TILT = 15; // độ nghiêng tối đa (độ), giữ ±10° như bản cũ của bạn
+const MAX_TILT = 15;
 
 export default function Hero() {
   const boxRef = useRef<HTMLDivElement>(null);
@@ -22,7 +22,6 @@ export default function Hero() {
 
   return (
     <section className="grid min-h-[calc(100vh-1rem)] items-center gap-8 px-2 py-8 lg:grid-cols-[1.45fr_1fr] lg:gap-x-32">
-      {/* Cột trái: box nhạc */}
       <div
         ref={boxRef}
         className="flex min-h-[420px] w-full flex-col justify-between rounded-2xl border-3 border-red-600 bg-black/40 p-10 backdrop-blur-md lg:aspect-video
@@ -43,8 +42,6 @@ export default function Hero() {
 
         <MusicPlayer />
       </div>
-
-      {/* Cột phải: để dành cho nội dung khác (social, thông tin...) */}
       <div className="px-6">
         <InfoBox />
       </div>

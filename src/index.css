@@ -7,11 +7,11 @@ body {
 
 html,
 body {
-  scrollbar-width: none;       /* Firefox, và Chrome/Edge bản mới */
-  -ms-overflow-style: none;    /* Edge/IE bản cũ */
+  scrollbar-width: none;      
+  -ms-overflow-style: none;   
 }
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  display: none;               /* Chrome, Edge, Safari bản cũ hơn */
+  display: none;               
 }

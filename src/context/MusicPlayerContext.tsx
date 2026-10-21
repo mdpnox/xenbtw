@@ -28,16 +28,12 @@ export function MusicPlayerProvider({ children }: { children: ReactNode }) {
 
   const track = TRACKS[index];
 
-  // Áp dụng âm lượng
   useEffect(() => {
     if (audioRef.current) audioRef.current.volume = volume;
   }, [volume]);
 
-
-  // Đổi bài thì tự phát tiếp nếu đang phát
   useEffect(() => {
     if (playing) audioRef.current?.play().catch(() => {});
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index]);
 
   const toggle = async () => {
@@ -47,7 +43,6 @@ export function MusicPlayerProvider({ children }: { children: ReactNode }) {
       try {
         await a.play();
       } catch {
-        /* trình duyệt chặn */
       }
     } else {
       a.pause();
@@ -92,7 +87,6 @@ export function MusicPlayerProvider({ children }: { children: ReactNode }) {
   );
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
 export function useMusicPlayer() {
   const ctx = useContext(MusicPlayerContext);
   if (!ctx) {

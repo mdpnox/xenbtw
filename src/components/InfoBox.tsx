@@ -53,7 +53,6 @@ export default function InfoBox() {
         className="w-full rounded-2xl border-2 border-red-600 p-6
                    shadow-[0_0_25px_rgba(255,0,40,0.6),inset_0_0_25px_rgba(255,0,40,0.15)]"
       >
-        {/* Danh sách linh kiện: 2 cột */}
         <dl className="grid gap-x-8 gap-y-2.5 sm:grid-cols-2">
           {INFO.map(({ label, value }) => (
             <div key={label} className="flex items-baseline justify-between gap-3 text-xs">
@@ -65,7 +64,6 @@ export default function InfoBox() {
 
         <hr className="my-5 border-white/15" />
 
-        {/* CS2 Settings: mỗi hàng một dòng, ô rộng vừa nội dung */}
         <h4 className="text-base font-bold text-white">{STATS_TITLE}</h4>
         <div className="mt-3 space-y-3">
           {STATS_ROWS.map((row, i) => (

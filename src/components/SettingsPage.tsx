@@ -96,7 +96,6 @@ const BINDS_RIGHT: Bind[] = [
   { keycap: 'MIDDLEMOUSE', action: 'Player Ping' },
 ];
 
-// ===== COMPONENT NHỎ: danh sách nhãn (trái) và giá trị (phải) =====
 function Rows({ items }: { items: Item[] }) {
   const toneClass = { good: 'text-green-400', bad: 'text-red-400' };
   return (
