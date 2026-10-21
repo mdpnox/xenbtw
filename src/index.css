@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+html,
+body {
+  scrollbar-width: none;       /* Firefox, và Chrome/Edge bản mới */
+  -ms-overflow-style: none;    /* Edge/IE bản cũ */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;               /* Chrome, Edge, Safari bản cũ hơn */
+}
